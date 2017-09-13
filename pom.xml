@@ -77,6 +77,13 @@
                   <outputDirectory>src/main/scripts/${env}/jpeg</outputDirectory>
                   <includes>${env}/**/*.*</includes>
                 </artifactItem>
+                <artifactItem>
+                  <groupId>be.yildiz-games</groupId>
+                  <artifactId>component-native-png</artifactId>
+                  <classifier>${env}</classifier>
+                  <outputDirectory>src/main/scripts/${env}/png</outputDirectory>
+                  <includes>${env}/**/*.*</includes>
+                </artifactItem>
               </artifactItems>
             </configuration>
           </execution>
@@ -88,14 +95,26 @@
   <dependencies>
     <dependency>
       <groupId>be.yildiz-games</groupId>
-      <artifactId>component-native-zlib</artifactId>
-      <version>1.2.11-SNAPSHOT</version>
+      <artifactId>component-native-jpeg</artifactId>
+      <version>9.1.0-SNAPSHOT</version>
       <classifier>${env}</classifier>
     </dependency>
     <dependency>
       <groupId>be.yildiz-games</groupId>
-      <artifactId>component-native-jpeg</artifactId>
-      <version>9.1.0-SNAPSHOT</version>
+      <artifactId>component-native-png</artifactId>
+      <version>1.6.32-SNAPSHOT</version>
+      <classifier>${env}</classifier>
+      <exclusions>
+        <exclusion>
+          <groupId>be.yildiz-games</groupId>
+          <artifactId>component-native-zlib</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>be.yildiz-games</groupId>
+      <artifactId>component-native-zlib</artifactId>
+      <version>1.2.11-SNAPSHOT</version>
       <classifier>${env}</classifier>
     </dependency>
   </dependencies>

@@ -1,15 +1,13 @@
-# freeimage
+# FreeImage 
 
+This repository is a fork of the FreeImage project that supports building via CMake. Please see the [original project](https://sourceforge.net/projects/freeimage/) if you want the unmodified codebase.
 
-### Appveyor builds
-Current master:
+## Building 
 
-[![Build status](https://ci.appveyor.com/api/projects/status/b87gv2bu4synmb1h/branch/master?svg=true)](https://ci.appveyor.com/project/imazen/freeimage/branch/master)
+Make sure CMake is installed, and run the following commands:
 
-Last build:
-
-[![Build status](https://ci.appveyor.com/api/projects/status/b87gv2bu4synmb1h?svg=true)](https://ci.appveyor.com/project/imazen/freeimage)
-
-### Travis build
-
-[![Build Status](https://travis-ci.org/imazen/freeimage.svg?branch=master)](https://travis-ci.org/imazen/freeimage)
+```
+$ mkdir build-FreeImage 
+$ cmake /path/to/FreeImage 
+$ make 
+```

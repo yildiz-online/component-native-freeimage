@@ -38,14 +38,7 @@ Go to your root directory, where you POM file is located.
 
 Then invoke maven
 
-For windows 32 bits
-mvn clean install -Denv=win32
-
-For windows 64 bits
-mvn clean install -Denv=win64
-
-For linux 64 bits
-mvn clean install -Denv=linux64
+mvn clean install
 
 This will compile the source code, then run the unit tests, and finally build a jar file.
 
@@ -53,36 +46,11 @@ This will compile the source code, then run the unit tests, and finally build a 
 
 In your maven project, add the dependency
 
-For windows 32 bits
-
 ```xml
 <dependency>
     <groupId>be.yildiz-games</groupId>
     <artifactId>component-native-freeimage</artifactId>
     <version>LATEST</version>
-    <classifier>win32</classifier>
-</dependency>
-```
-
-For windows 64 bits
-
-```xml
-<dependency>
-    <groupId>be.yildiz-games</groupId>
-    <artifactId>component-native-freeimage</artifactId>
-    <version>LATEST</version>
-    <classifier>win64</classifier>
-</dependency>
-```
-
-For linux 64 bits
-
-```xml
-<dependency>
-    <groupId>be.yildiz-games</groupId>
-    <artifactId>component-native-freeimage</artifactId>
-    <version>LATEST</version>
-    <classifier>linux64</classifier>
 </dependency>
 ```
 Replace LATEST by the version to use.

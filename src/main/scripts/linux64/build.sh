@@ -1,24 +1,13 @@
-cmake ../../c++ \
--DCMAKE_BUILD_TYPE=Release \
--DCMAKE_INSTALL_PREFIX="../../../../target/classes/linux64" \
--G "Unix Makefiles"
-
-r1=$?
-
+cp -R ../../c++ workdir
+cd workdir
 make
-
-mkdir -p ../../../../target/classes/linux64/include/
-mkdir -p ../../../../target/classes/linux64/lib/
-
-cp libFreeImage.a ../../../../target/classes/linux64/lib/libFreeImage.a
-rm libFreeImage.a
-cp ../../c++/Source/FreeImage.h ../../../../target/classes/linux64/include/FreeImage.h
-rm -R CMakeFiles
-rm CMakeCache.txt
-rm cmake_install.cmake
-rm Makefile
-rm -R jpeg
-rm -R png
+r1=$?
+mkdir -p ../../../../../target/classes/linux64/include
+mkdir -p ../../../../../target/classes/linux64/lib
+cp Dist/FreeImage.h ../../../../../target/classes/linux64/include
+cp Dist/libfreeimage.a ../../../../../target/classes/linux64/lib
+cd ..
+rm -r workdir
 
 return $r1
 

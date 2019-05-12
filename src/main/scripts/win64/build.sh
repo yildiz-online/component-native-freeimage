@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cp -R ../../c++ workdir
 cd workdir
 make

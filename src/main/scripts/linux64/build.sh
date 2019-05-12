@@ -11,7 +11,7 @@ cp Dist/libfreeimage.a ../../../../../target/classes/linux64/lib
 cd ..
 rm -r workdir
 
-return $r1
+exit ${r1}
 
 
 

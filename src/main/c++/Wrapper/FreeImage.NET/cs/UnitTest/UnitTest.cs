@@ -4142,7 +4142,7 @@ namespace FreeImageNETUnitTest
 
 			Marshal.FreeHGlobal(buffer);
 
-			testString = @"äöü?=§%/!)§(%&)(§";
+			testString = @"ï¿½ï¿½ï¿½?=ï¿½%/!)ï¿½(%&)(ï¿½";
 			buffer = Marshal.AllocHGlobal(testString.Length + 1);
 
 			for (index = 0; index < testString.Length; index++)

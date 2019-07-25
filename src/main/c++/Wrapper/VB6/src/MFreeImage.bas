@@ -3479,7 +3479,7 @@ Dim lpSA As Long
    ' This makes you use code like you would in C/C++:
    
    ' // this code assumes there is a bitmap loaded and
-   ' // present in a variable called ‘dib’
+   ' // present in a variable called ï¿½dibï¿½
    ' if(FreeImage_GetBPP(Bitmap) == 8) {
    '   // Build a greyscale palette
    '   RGBQUAD *pal = FreeImage_GetPalette(Bitmap);
@@ -3592,7 +3592,7 @@ Dim lpSA As Long
    ' This makes you use code like you would in C/C++:
    
    ' // this code assumes there is a bitmap loaded and
-   ' // present in a variable called ‘dib’
+   ' // present in a variable called ï¿½dibï¿½
    ' if(FreeImage_GetBPP(Bitmap) == 8) {
    '   // Build a greyscale palette
    '   RGBQUAD *pal = FreeImage_GetPalette(Bitmap);
@@ -3730,7 +3730,7 @@ Dim lpSA As Long
    ' This makes you use code like you would in C/C++:
    
    ' // this code assumes there is a bitmap loaded and
-   ' // present in a variable called ‘dib’
+   ' // present in a variable called ï¿½dibï¿½
    ' if(FreeImage_GetBPP(Bitmap) == 8) {
    '   // Remove transparency information
    '   byte *transt = FreeImage_GetTransparencyTable(Bitmap);

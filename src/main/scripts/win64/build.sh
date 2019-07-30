@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+chmod +x PKGBUILD
+./PKGBUILD
 cp -R ../../c++ workdir
 cd workdir
 PREFIX=i686-w64-mingw32

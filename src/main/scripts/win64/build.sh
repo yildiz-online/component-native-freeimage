@@ -2,6 +2,7 @@
 
 cp -R ../../c++ workdir
 cd workdir
+autoconf
 ./configure --host=x86_64-w64-mingw32
 make
 r1=$?
